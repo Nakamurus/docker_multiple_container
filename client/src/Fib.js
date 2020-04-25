@@ -42,11 +42,11 @@ class Fib extends Component {
         const entries = [];
 
         for (let key in this.state.values) {
-            entries.push{
+            entries.push(
                 <div key={key}>
                     For index {key} I calculated {this.state.values[key]}
                 </div>
-            }
+            )
         }
 
         return entries;
