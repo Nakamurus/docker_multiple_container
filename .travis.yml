@@ -17,7 +17,7 @@ after_success:
 
     # login to docker CLI
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-    # take those images nd push them to docker hub
+    # take those images and push them to docker hub
     - docker push 7676bukkyo/multi-client
     - docker push 7676bukkyo/multi-nginx
     - docker push 7676bukkyo/multi-server
